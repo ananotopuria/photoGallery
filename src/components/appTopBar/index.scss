@@ -1,0 +1,19 @@
+.menu-wapper-inner {
+    display: flex;
+    padding:12px;
+    margin:12px;
+}
+
+.menu-item {
+    margin: 0 12px;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    &:hover {
+        color: gray;
+    }
+}

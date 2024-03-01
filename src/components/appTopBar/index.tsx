@@ -13,14 +13,16 @@ const AppTopBar = () => {
   };
 
   return (
-    <div className="menu-wrapper">
-      <div className="menu-wapper-inner">
+    <nav className="navbar">
+      <div className="navbar-inner">
         <div className="menu-item" onClick={navigateToHome}>
           Home
         </div>
-        <div className="menu-item" onClick={navigateToHistory} >History</div>
+        <div className="menu-item" onClick={navigateToHistory}>
+          History
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

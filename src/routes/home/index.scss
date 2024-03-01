@@ -1,15 +1,68 @@
-.photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Creates three columns of equal size */
-  gap: 10px;
-}
-.photo {
-    position: relative;
-    padding: 12px;
-    margin: 12px;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+.home {
+  padding: 20px;
+  
+
+  .search {
+    text-align: center;
+    margin-bottom: 20px;
+
+    &-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #306969;
+    }
+
+    &-description {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    &-input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #51aeb1;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    &-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #48867b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #51aeb1;
+      }
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 0;
+    padding: 1.6rem;
+    margin-top: 5rem;
+    &-item {
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        transition: all 0.4s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 48em) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }

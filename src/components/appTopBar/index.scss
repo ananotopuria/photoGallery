@@ -1,19 +1,26 @@
-.menu-wapper-inner {
-    display: flex;
-    padding:12px;
-    margin:12px;
-}
+.navbar {
+  background-color: #f0efe9;
+  color: #48867b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 2rem;
 
-.menu-item {
-    margin: 0 12px;
+  &-inner {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .menu-item {
+    font-size: 1.4rem;
+    font-weight: 600;
     cursor: pointer;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+
     &:hover {
-        color: gray;
+      background-color: #48867b;
+      color: #fff;
     }
+  }
 }
